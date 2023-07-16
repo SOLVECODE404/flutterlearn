@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
-  final imageUrl =
-      "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg";
+  // final imageUrl =
+  // "https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg";
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -18,11 +18,11 @@ class MyDrawer extends StatelessWidget {
               margin: EdgeInsets.zero,
               accountName: Text("Utsav singh"),
               accountEmail: Text("utsav@gmail.com"),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(
-                  imageUrl,
-                ),
-              ),
+              // currentAccountPicture: CircleAvatar(
+              //   backgroundImage: NetworkImage(
+              //     imageUrl,
+              //   ),
+              // ),
             ),
           ),
           ListTile(
