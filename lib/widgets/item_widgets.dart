@@ -13,15 +13,18 @@ class ItemWidget extends StatelessWidget {
     return Card(
       // shape: StadiumBorder(),
       // color: Colors.orange,
-      child: ListTile(
-        leading: Image.asset("assets/images/iphone12.jpg"),
-        title: Text(item.name),
-        subtitle: Text(item.desc),
-        trailing: Text(
-          "\$${item.price}",
-          textScaleFactor: 1.5,
-          style:
-              TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold),
+      child: SizedBox(
+        height: 50,
+        child: ListTile(
+          leading: Image.asset(item.image,),
+          title: Text(item.name),
+          subtitle: Text(item.desc),
+          trailing: Text(
+            "\$${item.price}",
+            textScaleFactor: 1.5,
+            style:
+                TextStyle(color: Colors.deepPurple, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );

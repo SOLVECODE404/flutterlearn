@@ -3,20 +3,14 @@
 import 'package:flutter/material.dart';
 
 class catalogModel {
-  static final items = [
+  static List<Item> items = [
     Item(
       id: 1,
       name: "Iphone 12 pro",
       desc: "Apple pro features",
-      price: 999,
+      price: 9999,
       color: "#33505a",
-      image: Container(
-        child: Image.asset(
-          "assets/images/iphone12.jpg",
-          fit: BoxFit.cover,
-          width: 40,
-        ),
-      ),
+      image: "assets/images/iphone12.jpg",
     )
   ];
 }
@@ -27,7 +21,7 @@ class Item {
   final String desc;
   final num price;
   final String color;
-  final image;
+  final String image;
 
   Item(
       {required this.id,
@@ -36,4 +30,23 @@ class Item {
       required this.price,
       required this.color,
       required this.image});
+
+  factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+      id: map["id"],
+      name: map["name"],
+      desc: map["desc"],
+      price: map["price"],
+      color: map["color"],
+      image: map["image"],
+    );
+  }
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "image": image,
+      };
 }
