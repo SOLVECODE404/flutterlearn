@@ -6,7 +6,7 @@
       "desc": "Apple pro features",
       "price": 9999,
       "color": "#33505a",
-      "image": "assets/images/iPhone1.jpg,'100','100'"
+      "image": "assets/images/iPhone1.jpg"
     },
     {
       "id": 2,
@@ -22,29 +22,13 @@
       "price": 9229,
       "desc": "Motorola features",
       "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
+      "image": "assets/images/iPhone1.jpg"
     },
     {
       "id": 4,
       "name": "Google pixel",
       "desc": "Google pixel features",
       "price": 9932,
-      "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Redmi note",
-      "desc": "Redmi not pro features",
-      "price": 9349,
-      "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
-    },
-    {
-      "id": 6,
-      "name": "OPPO",
-      "desc": "OPPO features",
-      "price": 9349,
       "color": "#33505a",
       "image": "assets/images/iphone12.jpg"
     }
