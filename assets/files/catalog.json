@@ -31,6 +31,22 @@
       "price": 9932,
       "color": "#33505a",
       "image": "assets/images/iphone12.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Google pixel",
+      "desc": "Google pixel features",
+      "price": 9932,
+      "color": "#33505a",
+      "image": "assets/images/iphone12.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Google pixel",
+      "desc": "Google pixel features",
+      "price": 9932,
+      "color": "#33505a",
+      "image": "assets/images/iphone12.jpg"
     }
   ]
 }

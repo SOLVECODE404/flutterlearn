@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 class catalogModel {
   static List<Item> items = [
-    Item(
-      id: 1,
-      name: "Iphone 12 pro",
-      desc: "Apple pro features",
-      price: 9999,
-      color: "#33505a",
-      image: "assets/images/iphone12.jpg",
-    )
+    // Item(
+    //   id: 1,
+    //   name: "Iphone 12 pro",
+    //   desc: "Apple pro features",
+    //   price: 9999,
+    //   color: "#33505a",
+    //   image: "assets/images/iphone12.jpg",
+    // )
   ];
 }
 
