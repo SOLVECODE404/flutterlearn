@@ -3,11 +3,6 @@
 import 'package:flutter/material.dart';
 
 class catalogModel {
-  static final catModel = catalogModel._internal();
-
-  catalogModel._internal();
-
-  factory catalogModel() => catModel;
 
   static List<Item> items = [
     // Item(
