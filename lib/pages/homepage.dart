@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:catalog/pages/catalog.dart';
 import 'package:catalog/utlis/themes.dart';
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -37,6 +38,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // final dummylist = List.generate(6, (index) => catalogModel.items[0]);
     return Scaffold(
+      appBar: AppBar(
+        title:
+            "Catalog App".text.xl3.bold.color(Mytheme.darkBluishColor).make(),
+        titleSpacing: 80,
+      ),
+      drawer: MyDrawer(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Mytheme.darkBluishColor,
         onPressed: () => Navigator.pushNamed(context, MyRoutes.CartRoute),

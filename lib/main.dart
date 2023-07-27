@@ -1,4 +1,4 @@
-import 'package:catalog/pages/cart.dart';
+import 'package:catalog/pages/cart_page.dart';
 import 'package:catalog/pages/home_page_detail.dart';
 import 'package:catalog/pages/homepage.dart';
 import 'package:catalog/utlis/routes.dart';

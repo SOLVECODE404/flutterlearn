@@ -1,3 +1,4 @@
+import 'package:catalog/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -11,7 +12,6 @@ class MyHeader extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         20.heightBox,
-        "Catalog App".text.xl5.bold.color(Mytheme.darkBluishColor).make(),
         "Trending Products".text.xl2.make(),
       ],
     );
