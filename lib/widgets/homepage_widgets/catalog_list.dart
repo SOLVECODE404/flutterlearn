@@ -39,7 +39,7 @@ class CatalogItem extends StatelessWidget {
       child: Row(
         children: [
           Hero(
-            tag:Key(catalog.id.toString()),
+            tag: Key(catalog.id.toString()),
             child: Image.asset(catalog.image)
                 .box
                 .rounded
@@ -55,10 +55,11 @@ class CatalogItem extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              10.heightBox,
               catalog.name.text.xl2.bold
                   .color(Mytheme.darkBluishColor)
                   .make()
-                  .py12(),
+                  .py4(),
               catalog.desc.text.xl.make(),
               4.heightBox,
               ButtonBar(
@@ -73,7 +74,7 @@ class CatalogItem extends StatelessWidget {
                             MaterialStateProperty.all(Mytheme.darkBluishColor),
                         shape: MaterialStateProperty.all(RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)))),
-                    child: "Buy".text.make(),
+                    child: "Cart".text.make(),
                   )
                 ],
               )
@@ -81,6 +82,6 @@ class CatalogItem extends StatelessWidget {
           ))
         ],
       ),
-    ).white.rounded.square(140).make().py12();
+    ).white.roundedLg.square(140).make().py8();
   }
 }

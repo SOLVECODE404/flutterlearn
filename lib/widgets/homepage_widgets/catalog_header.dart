@@ -3,7 +3,6 @@ import 'package:velocity_x/velocity_x.dart';
 
 import '../../utlis/themes.dart';
 
-
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,6 +10,7 @@ class MyHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        20.heightBox,
         "Catalog App".text.xl5.bold.color(Mytheme.darkBluishColor).make(),
         "Trending Products".text.xl2.make(),
       ],

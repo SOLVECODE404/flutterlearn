@@ -13,6 +13,10 @@ class catalogModel {
     //   image: "assets/images/iphone12.jpg",
     // )
   ];
+  Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  Item getByPosition(int pos) => items[pos];
 }
 
 class Item {

@@ -2,51 +2,59 @@
   "products": [
     {
       "id": 1,
-      "name": "Iphone 12 pro",
-      "desc": "Apple pro features",
+      "name": "Utsav",
+      "desc": "Think features",
       "price": 9999,
       "color": "#33505a",
       "image": "assets/images/iPhone1.jpg"
     },
     {
       "id": 2,
-      "name": "Oneplus",
-      "desc": "Oneplus features",
+      "name": "Swayam",
+      "desc": "Oneplus Showoff ",
       "price": 1999,
       "color": "#33505a",
       "image": "assets/images/iphone12.jpg"
     },
     {
-      "name": "Motorola",
+      "name": "Tushar",
       "id": 3,
       "price": 9229,
-      "desc": "Motorola features",
+      "desc": "Imagination features",
       "color": "#33505a",
-      "image": "assets/images/iPhone1.jpg"
+      "image": "assets/images/1.jpg"
     },
     {
       "id": 4,
-      "name": "Google pixel",
-      "desc": "Google pixel features",
+      "name": "Uddeshya",
+      "desc": "Code features",
       "price": 9932,
       "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
+      "image": "assets/images/2.jpg"
     },
     {
       "id": 5,
-      "name": "Google pixel",
-      "desc": "Google pixel features",
+      "name": "Pintola",
+      "desc": "Gamer Edition ",
       "price": 9932,
       "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
+      "image": "assets/images/3.jpg"
     },
     {
       "id": 6,
-      "name": "Google pixel",
-      "desc": "Google pixel features",
+      "name": "Sachin",
+      "desc": "Cyber Securtiy ",
       "price": 9932,
       "color": "#33505a",
-      "image": "assets/images/iphone12.jpg"
+      "image": "assets/images/4.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Ayush",
+      "desc": "Crack it ",
+      "price": 9932,
+      "color": "#33505a",
+      "image": "assets/images/5.jpg"
     }
   ]
 }

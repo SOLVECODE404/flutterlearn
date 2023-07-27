@@ -2,9 +2,11 @@ import 'dart:convert';
 
 import 'package:catalog/pages/catalog.dart';
 import 'package:catalog/utlis/themes.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
+import '../utlis/routes.dart';
 import '../widgets/homepage_widgets/catalog_header.dart';
 import '../widgets/homepage_widgets/catalog_list.dart';
 
@@ -35,16 +37,23 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // final dummylist = List.generate(6, (index) => catalogModel.items[0]);
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Mytheme.darkBluishColor,
+        onPressed: () => Navigator.pushNamed(context, MyRoutes.CartRoute),
+        child: Icon(
+          CupertinoIcons.cart,
+        ),
+      ),
       backgroundColor: Mytheme.CreamColor,
       body: SafeArea(
         child: Container(
-          padding: Vx.m32,
+          padding: Vx.mH16,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MyHeader(),
               if (catalogModel.items != null && catalogModel.items.isNotEmpty)
-                CatalogList().py16().expand()
+                CatalogList().py8().expand()
               else
                 Center(
                   child: CircularProgressIndicator(
