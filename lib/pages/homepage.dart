@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:catalog/models/cart.dart';
 import 'package:catalog/pages/catalog.dart';
 import 'package:catalog/utlis/themes.dart';
 import 'package:catalog/widgets/drawer.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
+import '../core/store.dart';
 import '../utlis/routes.dart';
 import '../widgets/homepage_widgets/catalog_header.dart';
 import '../widgets/homepage_widgets/catalog_list.dart';
@@ -36,6 +38,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final _cart = (VxState.store as MyStore).cart;
     // final dummylist = List.generate(6, (index) => catalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
@@ -44,11 +47,19 @@ class _HomePageState extends State<HomePage> {
         titleSpacing: 80,
       ),
       drawer: MyDrawer(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Mytheme.darkBluishColor,
-        onPressed: () => Navigator.pushNamed(context, MyRoutes.CartRoute),
-        child: Icon(
-          CupertinoIcons.cart,
+      floatingActionButton: VxBuilder(
+        mutations: {AddMutation, RemoveMutation},
+        builder: (ctx, _, __) => FloatingActionButton(
+          backgroundColor: Mytheme.darkBluishColor,
+          onPressed: () => Navigator.pushNamed(context, MyRoutes.CartRoute),
+          child: Icon(
+            CupertinoIcons.cart,
+          ),
+        ).badge(
+          color: Vx.orange500,
+          textStyle: TextStyle(fontWeight: FontWeight.bold),
+          size: 22,
+          count: _cart.items.length,
         ),
       ),
       backgroundColor: Mytheme.CreamColor,
